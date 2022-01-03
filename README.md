@@ -1,12 +1,16 @@
-# Setup gitsettings
+# Setup global aliases for gitconfig
 
-## Containt of .gitconfig - 
+## Steps - 
+1. Clone this repository to local
+2. Update contents of .gitconfig to below - 
 ```
 [include]
-   path = c:\\gitl\\gitsettings\\mygit.config
+   path = <path\\to\\gitalias.config>
 
 [user]
-	email = 
-	name = 
+	email = <your email>
+	name = <your name>
 	
 ```
+
+3. Update gitalias.config paths to appropriate paths
