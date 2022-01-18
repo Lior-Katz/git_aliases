@@ -7,10 +7,13 @@
 [include]
    path = <path\\to\\gitalias.config>
 
+[alias]
+	cfg = !git config --file <path\\\\to\\\\gitalias.config>
+	
 [user]
 	email = <your email>
 	name = <your name>
 	
 ```
 
-3. Update gitalias.config paths to appropriate paths
+3. Update gitalias.config path to appropriate path from cloned gitalias repository
