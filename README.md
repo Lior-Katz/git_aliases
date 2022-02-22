@@ -5,10 +5,10 @@
 2. Update contents of your .gitconfig (google for its path on your machine!) to below - 
 ```
 [include]
-   path = <path\\to\\gitalias.config>
+   path = <path\\to\\alias4git\\alias.gitconfig>
 
 [alias]
-	cfg = !git config --file <path\\\\to\\\\gitalias.config>
+	cfg = !git config --file <path\\\\to\\\\alias4git\\\\alias.gitconfig>
 	
 [user]
 	email = <your-email>
@@ -16,4 +16,4 @@
 	
 ```
 
-3. Update gitalias.config path to appropriate path from repository cloned
+3. Update alias.gitconfig path to appropriate path from repository cloned
