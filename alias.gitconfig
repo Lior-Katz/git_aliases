@@ -3,23 +3,34 @@
 	cm = commit -m
 	co = checkout
 	br = branch
-	dv = difftool -t vimdiff -y
-	gl = cfg -l
 	ac = commit -am
-	se = !git rev-list --all | xargs git grep -F
-	npp = "!start notepad++ "
-	ff = "flow feature"
+	sync = !git co develop && git pull && git co -
 	nbr = git co -b
-	map = log --pretty --oneline --graph
-	catmerge = merge --strategy-option theirs
+	
 	cln = clean -fd
-	dpcln = clean -fdx
-	dcln = clean -fdx
-	ffco = flow feature checkout
+	dcln = clean -dfx
+	
+	dv = difftool -t vimdiff -y
+	map = log --pretty --oneline --graph
+	se = !git rev-list --all | xargs git grep -F
+	
+	gl = cfg -l
+	
+	npp = "!start notepad++ "
+	
+	ff = flow feature
 	ffl = flow feature list
+	ffco = flow feature checkout
+	
+	catmerge = merge --strategy-option theirs
+	
+	dsdoc = !start msedge file:///C:/DS/B27_64/CAADoc/doc/online/CAACenV5Default.htm
+	dsfind = !C:\\\\ProgramData\\\\xtools\\\\dslook.bat
+
 [gitflow "branch"]
 	master = main
 	develop = develop
+
 [gitflow "prefix"]
 	feature = feature/
 	bugfix = bugfix/
@@ -27,7 +38,9 @@
 	hotfix = hotfix/
 	support = support/
 	versiontag = 
+
 [gitflow "path"]
 	hooks = .git/hooks
+
 [help]
 	autocorrect = 20
