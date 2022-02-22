@@ -11,8 +11,8 @@
 	cfg = !git config --file <path\\\\to\\\\gitalias.config>
 	
 [user]
-	email = <your email>
-	name = <your name>
+	email = <your-email>
+	name = <your-name>
 	
 ```
 
