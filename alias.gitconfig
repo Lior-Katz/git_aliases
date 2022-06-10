@@ -2,7 +2,7 @@
 	st = status
 	cm = commit -m
 	co = checkout
-	br = branch
+	br = branch --sort=-committerdate
 	ac = commit -am
 	sync = !git co develop && git pull && git co -
 	nbr = git co -b
