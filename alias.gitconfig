@@ -27,6 +27,7 @@
 	dsdoc = !start msedge file:///C:/DS/B27_64/CAADoc/doc/online/CAACenV5Default.htm
 	dsfind = !C:\\\\ProgramData\\\\xtools\\\\dslook.bat
 
+	compare = rev-list --count --left-right
 [gitflow "branch"]
 	master = main
 	develop = develop
@@ -44,3 +45,7 @@
 
 [help]
 	autocorrect = 20
+[rerere]
+	enabled = true
+[push]
+	autoSetupRemote = true
