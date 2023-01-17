@@ -43,7 +43,7 @@
    ```
    or using 
    ```
-   git cmdlist
+   git cfglist
    ```
 6. Commit your change to this repository using git and create Pull Request
    ```
