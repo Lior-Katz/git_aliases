@@ -28,6 +28,7 @@
 	compare = rev-list --count --left-right
 	cmdlist = !git cfg -l | grep 'alias'
 	list = !git cfg -l | grep 'alias'
+	cfglist = !git cfg -l | grep 'alias'
 [gitflow "branch"]
 	master = main
 	develop = develop
