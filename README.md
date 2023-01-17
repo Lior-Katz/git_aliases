@@ -41,6 +41,10 @@
    ```
    git cfg -l
    ```
+   or using 
+   ```
+   git cmdlist
+   ```
 6. Commit your change to this repository using git and create Pull Request
    ```
    git add .
