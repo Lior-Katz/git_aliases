@@ -29,6 +29,11 @@
 	cmdlist = !git cfg -l | grep 'alias'
 	list = !git cfg -l | grep 'alias'
 	cfglist = !git cfg -l | grep 'alias'
+	
+	
+	ts = !ls -ll .git/FETCH_HEAD
+	synced = !ls -ll .git/FETCH_HEAD
+	
 [gitflow "branch"]
 	master = main
 	develop = develop
