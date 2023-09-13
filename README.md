@@ -6,7 +6,9 @@
    ```
    git clone https://github.com/pipelineinc/alias4git.git
    ```
-2. Update contents of your global .gitconfig (google for its path on your machine!) to below - 
+2. Locate global .gitconfig file location - 
+   ![Alt text](image_gitconfigpaths.png)
+3. Update contents of your global .gitconfig (google for its path on your machine!) to below - 
 ```
 [include]
    path = <path\\to\\alias4git\\alias.gitconfig>
