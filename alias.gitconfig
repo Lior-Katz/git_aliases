@@ -1,5 +1,5 @@
 [alias]
-	st = status
+	st = status -s -b
 	cm = commit -m
 	co = checkout
 	br = branch --sort=-committerdate
@@ -32,7 +32,7 @@
 	
 	
 	ts = !ls -ll .git/FETCH_HEAD
-	synced = !ls -ll .git/FETCH_HEAD
+        lastpull = !ls -ll .git/FETCH_HEAD
 	
 [gitflow "branch"]
 	master = main
