@@ -33,6 +33,8 @@
 	
 	ts = !ls -ll .git/FETCH_HEAD
         lastpull = !ls -ll .git/FETCH_HEAD
+	myalias = "!f() { echo 'Hello, ' $1; }; f"
+	save = "!commitAndPushAlias() { setlocal; set HERE=c:\\gtl\\Antic; cd c:\\\\gtl\\\\alias4git; git add alias.gitconfig; git commit -m \"save new alias\"; cd %HERE%; endlocal; }; commitAndPushAlias"
 	
 [gitflow "branch"]
 	master = main
