@@ -1,8 +1,16 @@
 [alias]
-	st = status -s -b
 	cm = commit -m
 	co = checkout
 	br = branch --sort=-committerdate
+	nccommit = commit --allow-empty-message -m \"\"
+	st = status
+	gcl = config --global -l
+	last = log -1 HEAD --stat
+	vimdiff = difftool -t vimdiff -y
+	com = checkout master
+	diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+	unstage = restore --staged
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	
 	map = log --pretty --oneline --graph
 
