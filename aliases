@@ -20,9 +20,6 @@
 	cfglist = !git cfg -l | grep 'alias'
 	
         lastpull = !ls -ll .git/FETCH_HEAD
-
-	share = "!commitAndPushAlias() { cd c:\\\\gtl\\\\alias4git; git add alias.gitconfig; git commit; }; commitAndPushAlias"
-
 [help]
 	autocorrect = 20
 [push]
