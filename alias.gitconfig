@@ -3,57 +3,19 @@
 	cm = commit -m
 	co = checkout
 	br = branch --sort=-committerdate
-	ac = commit -am
-	sync = !git co develop && git pull && git co -
-	nbr = git co -b
 	
-	cln = clean -fd
-	dcln = clean -dfx
-	
-	dv = difftool -t vimdiff -y
 	map = log --pretty --oneline --graph
-	se = !git rev-list --all | xargs git grep -F
-	
-	gl = cfg -l
-	
-	npp = "!start notepad++ "
-	
-	ff = flow feature
-	ffl = flow feature list
-	ffco = flow feature checkout
-	
-	catmerge = merge --strategy-option theirs
-	
 
 	compare = rev-list --count --left-right
 	cmdlist = !git cfg -l | grep 'alias'
 	list = !git cfg -l | grep 'alias'
 	cfglist = !git cfg -l | grep 'alias'
 	
-	
-	ts = !ls -ll .git/FETCH_HEAD
         lastpull = !ls -ll .git/FETCH_HEAD
-	hi = "!f() { echo 'Hello, ' $1; }; f"
+
 	share = "!commitAndPushAlias() { cd c:\\\\gtl\\\\alias4git; git add alias.gitconfig; git commit; }; commitAndPushAlias"
-	
-[gitflow "branch"]
-	master = main
-	develop = develop
-
-[gitflow "prefix"]
-	feature = feature/
-	bugfix = bugfix/
-	release = release/
-	hotfix = hotfix/
-	support = support/
-	versiontag = 
-
-[gitflow "path"]
-	hooks = .git/hooks
 
 [help]
 	autocorrect = 20
-[rerere]
-	enabled = true
 [push]
 	autoSetupRemote = true
